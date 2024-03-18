@@ -2,13 +2,14 @@ import { Button, Navbar, TextInput } from 'flowbite-react'
 import { Link, useLocation } from 'react-router-dom'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {FaMoon} from 'react-icons/fa'
+import myconLogo from '../images/mycon-logo.png'
 
 export default function Header () {
     const path = useLocation().pathname;
   return (
     <Navbar className='border-b-2'>
-        <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl front-semibold dark:text-white'>
-            <span className='px-2 py-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-lg text-white'>Mycon's</span>
+        <Link to="/" className='flex items-center space-x-2 whitespace-nowrap text-sm sm:text-xl front-semibold dark:text-white'>
+            <img src={myconLogo} alt="Mycon Logo"  height="60px" width="60px" />
             E Commerce
         </Link>
         <form>
