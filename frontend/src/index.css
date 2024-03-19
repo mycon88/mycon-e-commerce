@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-slide {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the slide horizontally */
+  }

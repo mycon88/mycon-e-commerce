@@ -4,8 +4,9 @@ import Dashboard from './pages/Dashboard'
 import Products from './pages/Products'
 import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
-import About from './pages/About'
+import MyCart from './pages/MyCart'
 import Header  from "./components/Header"
+
 
 export default function App() {
   return (
@@ -14,7 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/my-cart" element={<MyCart />} />
         <Route path="/products" element={<Products />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
