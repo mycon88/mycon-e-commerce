@@ -19,7 +19,7 @@ router.get("/searchByName", searchByName);
 router.get("/searchByPrice", searchByPrice);
 
 
-router.post("/", verifyToken, addProduct);
+router.post("/add", verifyToken, addProduct);
 
 router.get("/all", verifyToken, getAllProducts);
 
