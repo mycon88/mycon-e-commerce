@@ -100,12 +100,12 @@ export default function ProductView() {
   };
 
   return (
-    <Container className="mt-5">
+    <Container className="flex mt-5 justify-center">
       <Row>
         <Col lg={{ span: 6, offset: 3 }}>
           {product && (
-            <Card>
-              <Card.Body className="text-center">
+            <Card className="border rounded shadow p-2 m-2" style={{width: "200%"}}>
+              <Card.Body className="text-center " >
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Subtitle>Description:</Card.Subtitle>
                 <Card.Text>{product.description}</Card.Text>
@@ -122,7 +122,7 @@ export default function ProductView() {
                     className="text-center" // Center the text inside the input field
                   />
                 </Form.Group>
-                <Button variant="primary" onClick={handleCheckout}>
+                <Button className="border rounder shadow bg-blue-500 text-white p-2" variant="primary" onClick={handleCheckout}>
                   Checkout
                 </Button>
               </Card.Body>

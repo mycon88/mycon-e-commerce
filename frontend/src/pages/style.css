@@ -1,0 +1,33 @@
+.container-home {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .slideshow-container {
+    width: 35%;
+    height: 50%;
+  }
+  
+  .each-slide-effect {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .each-slide-effect img {
+    width: 100%;
+    height: auto;
+  }  
+  
+  
+  .video-container {
+    width: 100%;
+    margin-top: 20px; /* Adjust as needed */
+    padding-right: 39px;
+  }
+  
+  #myVideo {
+    width: 100%;
+    height: auto;
+  }
+  
